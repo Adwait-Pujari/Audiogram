@@ -1,0 +1,111 @@
+body{
+    background-color: #ebeba5 ;
+}
+
+.grid-layout1
+{
+    border:1px solid black;
+    align-content: center;
+    /* width: 30%;
+    height: 30%; */
+    min-width: 480px;
+    margin-left: 5%;
+    position: relative;
+}
+
+
+
+.graph-layout{
+    margin-top: 2%;
+}
+
+
+
+.audiogram_img{
+    min-width: 480px;
+    margin-left: 5%; 
+    position: absolute;
+}
+
+
+
+.left-ear-value{
+    background-color: rgb(44, 96, 209);
+    color: yellow;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    margin-left: 5%;
+    transition: background-color 0.3s ease;
+}
+
+.left-ear-value:hover{
+    background-color: rgb(70, 73, 80);
+}
+
+.right-ear-value{
+    background-color: rgb(176, 22, 22);
+    color: yellow;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.right-ear-value:hover{
+    background-color: rgb(102, 43, 43);
+}
+
+.clear{
+    padding : 10px;
+    font-weight: 600;
+    background-color: greenyellow;
+    cursor: pointer;
+    margin-left: 5%;
+
+    transition: background-color 0.3s ease;
+}
+
+.clear:hover{
+    background-color: rgb(145, 179, 95);
+}
+
+
+/*Irrelevant*/
+.single-grid{
+    padding: 10px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.partitioned-grid{
+    padding: 10px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+
+/*
+Unused method
+
+/* .grid-layout2
+{
+    border:1px solid black;
+    align-content: center;
+    /* width: 30%;
+    height: 30%; 
+    min-width: 480px;
+    margin-left: 5%;
+    position: relative;
+    float: left;
+} 
+
+
+/*To make sure that the elements under(appear after) the canvas are visible*/ 
+/* .graph-layout::after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+*/

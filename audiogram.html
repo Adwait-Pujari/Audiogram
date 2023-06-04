@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canvas grid</title>
+
+        <link rel="stylesheet" href="audiogram.css">
+    </head>
+    <body>
+        <div>
+            <h2 style="text-align: center;">Audiogram</h2>
+            <hr style="height: 2px; background-color: black;">
+
+            <!-- <div>
+                <span>
+                    <button class = 'single-grid' onclick="singleLayout()">Single Layout</button>
+                </span>
+                <span>
+                    <button class ='partitioned-grid' onclick="multiLayout()">Partitioned Layout</button>
+                </span>
+            </div> -->
+            <div class = 'graph-layout'>
+                <!-- Width and Height are hard-coded-->
+                
+                <span class="canvas-container">
+                    <img src = 'audiogram_image.png' class = 'audiogram_img'> 
+                    <canvas class = 'grid-layout1' id = 'grid1' > </canvas>
+                    <!-- <canvas class = 'grid-layout2' id = 'grid2' style = "display: none;" > </canvas> -->
+                </span>
+            </div>
+            <span> 
+                <div>
+                    <button class = 'left-ear-value' onclick = "confirmDisplayValue('X');">X</button>
+                    <button class = 'right-ear-value' onclick = "confirmDisplayValue('O');">O</button>
+                </div>
+                <br>
+                <div>
+                    <button class = 'left-ear-value' onclick = "confirmDisplayValue('>');"> > </button>
+                    <button class = 'right-ear-value' onclick = "confirmDisplayValue('<');"> < </button>
+                </div>
+            </span>
+        </div>
+        <br>
+        <div>
+            <span>
+                <button class = 'clear' onclick = "clearAudiogram()"> Clear Audiogram </button> 
+                <button class = 'clear' onclick = "submit()"> Submit Data </button> 
+                
+            </span>
+        </div>
+        
+        <script src = "audiogram.js"> </script>
+    </body>
+</html>
